@@ -5,9 +5,17 @@ import ProductCard from "../components/ProductCard";
 
 export default function Products() {
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const [search, setSearch] = useState("");
 
-  const phones = products.filter((product) => product.category === "phone");
-  const accessories = products.filter(
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  const phones = filteredProducts.filter(
+    (product) => product.category === "phone"
+  );
+
+  const accessories = filteredProducts.filter(
     (product) => product.category === "accessory"
   );
 
@@ -17,44 +25,66 @@ export default function Products() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-3xl md:text-4xl font-bold text-center mb-10"
+        className="text-3xl md:text-4xl font-bold text-center mb-8"
       >
         Nos Produits
       </motion.h2>
 
-      {/* Téléphones */}
-      <div className="mb-16">
-        <h3 className="text-2xl font-semibold mb-6 text-primary text-center md:text-left">
-          Téléphones
-        </h3>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {phones.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              setSelectedProduct={setSelectedProduct}
-            />
-          ))}
-        </div>
+      {/* Barre de recherche */}
+      <div className="max-w-2xl mx-auto mb-12">
+        <input
+          type="text"
+          placeholder="Rechercher un produit..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="w-full p-4 rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-800 dark:text-white outline-none focus:ring-2 focus:ring-primary"
+        />
       </div>
+
+      {/* Téléphones */}
+      {phones.length > 0 && (
+        <div className="mb-16">
+          <h3 className="text-2xl font-semibold mb-6 text-primary text-center md:text-left">
+            Téléphones
+          </h3>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {phones.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                setSelectedProduct={setSelectedProduct}
+              />
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Accessoires */}
-      <div>
-        <h3 className="text-2xl font-semibold mb-6 text-primary text-center md:text-left">
-          Accessoires
-        </h3>
+      {accessories.length > 0 && (
+        <div>
+          <h3 className="text-2xl font-semibold mb-6 text-primary text-center md:text-left">
+            Accessoires
+          </h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {accessories.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              setSelectedProduct={setSelectedProduct}
-            />
-          ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {accessories.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                setSelectedProduct={setSelectedProduct}
+              />
+            ))}
+          </div>
         </div>
-      </div>
+      )}
+
+      {/* Aucun résultat */}
+      {phones.length === 0 && accessories.length === 0 && (
+        <p className="text-center text-gray-600 dark:text-gray-300 text-lg">
+          Aucun produit trouvé.
+        </p>
+      )}
 
       {/* Modal détail */}
       <AnimatePresence>
@@ -81,9 +111,7 @@ export default function Products() {
               />
 
               <div className="p-6">
-                <h3 className="text-2xl font-bold">
-                  {selectedProduct.name}
-                </h3>
+                <h3 className="text-2xl font-bold">{selectedProduct.name}</h3>
 
                 <p className="text-primary font-semibold mt-2">
                   {selectedProduct.price}
