@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import about from "../assets/about.jpg"
+import about from "../assets/hero-bg.jpeg"
 
 export default function About(){
 

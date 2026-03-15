@@ -10,14 +10,12 @@ id="home"
 className="relative min-h-screen flex items-center justify-center bg-cover bg-center pt-24"
 style={{ backgroundImage: `url(${hero})` }}
 >
-
-{/* Overlay + Blur */}
+    
 <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
 
-{/* Content */}
 <div className="relative max-w-7xl mx-auto px-6 text-center text-white">
 
-{/* Title */}
+
 <motion.h1
 initial={{ opacity:0, y:40 }}
 animate={{ opacity:1, y:0 }}
@@ -27,7 +25,6 @@ className="text-4xl md:text-6xl font-bold tracking-wide"
 ASEF BUSINESS
 </motion.h1>
 
-{/* Subtitle */}
 <motion.p
 initial={{ opacity:0 }}
 animate={{ opacity:1 }}
@@ -37,7 +34,6 @@ className="text-xl md:text-2xl mt-4 text-primary font-medium"
 Prix café Touba
 </motion.p>
 
-{/* Description */}
 <motion.p
 initial={{ opacity:0 }}
 animate={{ opacity:1 }}
@@ -46,10 +42,10 @@ className="mt-6 max-w-2xl mx-auto text-lg leading-relaxed"
 >
 Votre boutique spécialisée dans la vente de smartphones et accessoires :
 AirPods, écouteurs Bluetooth, coques, chargeurs et bien plus encore.
-Profitez des meilleurs prix et d’un service rapide.
+Nous proposons également la réparation de téléphones avec un service rapide et professionnel.
+Profitez des meilleurs prix et d’un service rapide. 📱🔧
 </motion.p>
 
-{/* Buttons */}
 <motion.div
 initial={{ opacity:0 }}
 animate={{ opacity:1 }}

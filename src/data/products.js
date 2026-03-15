@@ -11,25 +11,34 @@ import chargeuriphone from "../assets/chargeuriphone.jpg"
 import airpod2 from "../assets/airpod2.jpg"
 import iphonexr from "../assets/iphonexr.jpg"
 import iphone13 from "../assets/iphone13.jpg"
-import simple from "../assets/16simple.jpg"
+import simple from "../assets/iphone16simple.jpg"
 import huawei from "../assets/Huaweinova.jpg"
-import onze from "../assets/11simple.jpg"
+import onze from "../assets/11simple.jpeg"
+import iphone11proo from "../assets/11pro.jpg"
+import iphone11pro from "../assets/iphone11progold.jpeg"
+import iphone11promax from "../assets/11promax.jpg"
+import iphone17pro from "../assets/17proo.jpg"
+import powerbank from "../assets/pb.jpg"
+import iphone15promax from "../assets/16promax.png"
+import iphone15plus from "../assets/iphone15plus.png"
+import ecouteur from "../assets/Ecouteur.jpg"
+
 
 export const products = [
 
 {
 id:1,
 name:"iPhone 17 Pro Max",
-price:"900 000 FCFA",
+price:"930 000 FCFA",
 image:iphone17,
 category:"phone",
-description:"Le iPhone 17 Pro Max offre un écran haute résolution, un appareil photo très performant et une grande autonomie pour une utilisation fluide au quotidien."
+description:"Etat battérie: 100%, Stockage: 256GO"
 },
 
 {
 id:9,
-name:"Apple Watch",
-price:"20 000 FCFA",
+name:"Apple Watch Serie 11 46mm Copie conforme",
+price:"18 000 FCFA",
 image:watch,
 category:"accessory",
 description:"Montre connectée Apple Watch idéale pour suivre votre activité physique, recevoir vos notifications et rester connecté à votre smartphone."
@@ -38,7 +47,7 @@ description:"Montre connectée Apple Watch idéale pour suivre votre activité p
 {
 id:10,
 name:"Chargeur Iphone",
-price:"7 000 FCFA",
+price:"à partir de 5 000 FCFA",
 image:chargeuriphone,
 category:"accessory",
 description:"Chargeur iPhone fiable et rapide permettant de recharger votre appareil en toute sécurité avec une bonne vitesse de charge."
@@ -46,8 +55,8 @@ description:"Chargeur iPhone fiable et rapide permettant de recharger votre appa
 
 {
 id:11,
-name:"Airpod2 Original",
-price:"50 000 FCFA",
+name:"Airpod2 Original Venant",
+price:"70 000 FCFA",
 image:airpod2,
 category:"accessory",
 description:"AirPods 2 originaux avec un son clair, une connexion rapide avec les appareils Apple et une autonomie idéale pour la musique et les appels."
@@ -56,7 +65,7 @@ description:"AirPods 2 originaux avec un son clair, une connexion rapide avec le
 {
 id:2,
 name:"Headphone JBL",
-price:"100 000 FCFA",
+price:"20 000 FCFA",
 image:headphone,
 category:"accessory",
 description:"Casque JBL avec un son puissant, des basses profondes et un grand confort pour écouter de la musique pendant de longues périodes."
@@ -82,8 +91,8 @@ description:"Le Redmi Note 12 est un smartphone performant avec une bonne autono
 
 {
 id:5,
-name:"AirPods Pro",
-price:"85 000 FCFA",
+name:"AirPods Pro 2 type C copie conforme",
+price:"15 000 FCFA",
 image:airpods,
 category:"accessory",
 description:"AirPods Pro avec réduction de bruit active, son immersif et connexion rapide pour profiter d'une expérience audio premium."
@@ -109,8 +118,8 @@ description:"Coque de protection pour iPhone conçue pour protéger efficacement
 
 {
 id:8,
-name:"Chargeur rapide",
-price:"10 000 FCFA",
+name:"Chargeur Type C",
+price:"à partir de 5 000 FCFA",
 image:chargeur,
 category:"accessory",
 description:"Chargeur rapide universel permettant de recharger votre téléphone rapidement tout en protégeant la batterie."
@@ -119,19 +128,19 @@ description:"Chargeur rapide universel permettant de recharger votre téléphone
 {
 id:12,
 name:"iPhone 16 simple",
-price:"350 000 FCFA",
+price:"400 000 FCFA",
 image:simple,
 category:"phone",
-description:"Le iPhone 16 simple propose de bonnes performances, un appareil photo amélioré et un design élégant adapté aux utilisateurs modernes."
+description:"Etat battérie: 100%, Stockage: 128GO."
 },
 
 {
 id:13,
 name:"iPhone XR",
-price:"120 000 FCFA",
+price:"110 000 FCFA",
 image:iphonexr,
 category:"phone",
-description:"Le iPhone XR reste un smartphone fiable avec un écran large, un bon appareil photo et une utilisation fluide pour les applications quotidiennes."
+description:"Etat battérie: 100%, Stockage: 128GO"
 },
 
 {
@@ -145,20 +154,94 @@ description:"Huawei Nova est un smartphone élégant offrant un bon équilibre e
 
 {
 id:15,
-name:"iPhone 13",
-price:"190 000 FCFA",
+name:"iPhone 13 simple",
+price:"185 000 FCFA",
 image:iphone13,
 category:"phone",
-description:"L'iPhone 13 propose une excellente performance, un appareil photo amélioré et une grande fluidité pour une expérience utilisateur optimale."
+description:"Etat battérie: 90% et plus, Stockage: 128GO"
 },
+
+{
+id:17,
+name:"iPhone 11 Pro Gold",
+price:"145 000 FCFA",
+image:iphone11pro,
+category:"phone",
+description:"Etat battérie: 90% et plus, Stockage: 64GO"
+},
+
+{
+id:18,
+name:"iPhone 11 Pro",
+price:"155 000 FCFA",
+image:iphone11proo,
+category:"phone",
+description:"Etat battérie: 90% et plus, Stockage: 256GO"
+},
+
+{
+id:19,
+name:"iPhone 11 Pro Max",
+price:"150 000 FCFA",
+image:iphone11promax,
+category:"phone",
+description:"Etat battérie: 90% et plus, Stockage: 64GO"
+},
+
+{
+id:20,
+name:"iPhone 15 Plus",
+price:"350 000 FCFA",
+image:iphone15plus,
+category:"phone",
+description:"Etat battérie: 90% et plus, Stockage: 64GO"
+},
+
+{
+id:21,
+name:"iPhone 17 Pro",
+price:"750 000 FCFA",
+image:iphone17pro,
+category:"phone",
+description:"Etat battérie: 100%, Stockage: 256GO"
+},
+
+{
+id:22,
+name:"iPhone 16 Pro Max",
+price:"600 000 FCFA",
+image:iphone15promax,
+category:"phone",
+description:"Etat battérie: 90% et plus, Stockage: 128GO"
+},
+
+{
+id:23,
+name:"Powerbank Original",
+price:"15 000 FCFA",
+image:powerbank,
+category:"accessory",
+description:"Chargeur rapide universel permettant de recharger votre téléphone rapidement tout en protégeant la batterie."
+},
+
+{
+id:24,
+name:"Ecouteur",
+price:"1 000 FCFA",
+image:ecouteur,
+category:"accessory",
+},
+
+
 
 {
 id:16,
 name:"iPhone 11 simple",
-price:"135 000 FCFA",
+price:"120 000 FCFA",
 image:onze,
 category:"phone",
-description:"L’iPhone 11 simple reste un smartphone puissant avec un bon appareil photo et une excellente stabilité pour les applications et les photos."
+description:"Etat battérie: 90% et plus, Stockage: 64GO."
 }
+
 
 ]
