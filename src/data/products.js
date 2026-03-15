@@ -244,8 +244,8 @@ description:"Chargeur rapide universel permettant de recharger votre téléphone
 
 {
 id:24,
-name:"Ecouteur",
-price:"1 000 FCFA",
+name:"Ecouteur Iphone Original",
+price:"10 000 FCFA",
 image:ecouteur,
 category:"accessory",
 },

@@ -5,15 +5,17 @@ export default function ProductCard({ product, setSelectedProduct }) {
     <motion.div
       whileHover={{ scale: 1.03 }}
       transition={{ duration: 0.3 }}
-      className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden"
+      className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden h-full flex flex-col"
     >
-      <img
-        src={product.image}
-        alt={product.name}
-        className="w-full h-52 object-cover"
-      />
+      <div className="w-full overflow-hidden">
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-full h-40 sm:h-48 md:h-52 object-cover"
+        />
+      </div>
 
-      <div className="p-4">
+      <div className="p-4 flex flex-col flex-grow">
         <h3 className="text-lg font-bold text-gray-800 dark:text-white">
           {product.name}
         </h3>
