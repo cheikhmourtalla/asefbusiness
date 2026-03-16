@@ -67,6 +67,7 @@ import iphone13maxx from "../assets/13pmm.jpg"
 import iphone14simple from "../assets/14simple.jpg"
 import iphone15simple from "../assets/15simple.jpg"
 import iphone16pro from "../assets/16pro.jpg"
+import iphone17simple from "../assets/17simple.jpg"
 
 
 export const products = [
@@ -677,6 +678,15 @@ price:"500 000 FCFA",
 image:iphone16pro,
 category:"phone",
 description:"Eta battérie: 90% et plus, Stockage: 256GO"
+},
+
+{
+id:70,
+name:"Iphone 17 Simple Esim",
+price:"500 000 FCFA",
+image:iphone17simple,
+category:"phone",
+description:"Eta battérie: 100%, Stockage: 256GO"
 },
 
 {
