@@ -408,7 +408,7 @@ description:"Stockage: 128GO"
 {
 id:14,
 name:"Huawei P30 Lite",
-price:"500 000 FCFA",
+price:"50 000 FCFA",
 image:huaweip30,
 category:"phone",
 description:"Stockage: 128GO"
