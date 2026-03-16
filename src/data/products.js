@@ -56,7 +56,17 @@ import ipadairm3 from "../assets/ipadairm3inch.jpg"
 import ipadpro10 from "../assets/ipadpro10.jpg"
 import ipadpro11inch from "../assets/ipadpro11inch4th.png"
 import ipadprom4 from "../assets/ipadproinchm4.jpg"
-
+import iphone12max from "../assets/12promax.jpg"
+import iphone12maxx from "../assets/12promaxx.jpg"
+import iphone12simple from "../assets/12simple.jpg"
+import iphone12s from "../assets/12simplee.png"
+import iphone13proo from "../assets/13pr.jpg"
+import iphone13pro from "../assets/13proo.png"
+import iphone13max from "../assets/13pm.jpg"
+import iphone13maxx from "../assets/13pmm.jpg"
+import iphone14simple from "../assets/14simple.jpg"
+import iphone15simple from "../assets/15simple.jpg"
+import iphone16pro from "../assets/16pro.jpg"
 
 
 export const products = [
@@ -297,7 +307,7 @@ description:"Etat battérie: 90% et plus, Stockage: 128GO"
 
 {
 id:29,
-name:"iPhone 16 Plus 256",
+name:"iPhone 16 Plus",
 price:"500 000 FCFA",
 image:iphone16pluss,
 category:"phone",
@@ -568,6 +578,105 @@ price:"460 000 FCFA",
 image:ipadairm3,
 category:"phone",
 description:"Stockage: 128GO"
+},
+
+{
+id:59,
+name:"Iphone 12 Pro Max",
+price:"210 000 FCFA",
+image:iphone12max,
+category:"phone",
+description:"Eta battérie: 90% et plus, Stockage: 128GO"
+},
+
+{
+id:60,
+name:"Iphone 12 Pro Max",
+price:"225 000 FCFA",
+image:iphone12maxx,
+category:"phone",
+description:"Eta battérie: 90% et plus, Stockage: 256GO"
+},
+
+{
+id:61,
+name:"Iphone 12 Simple",
+price:"130 000 FCFA",
+image:iphone12s,
+category:"phone",
+description:"Eta battérie: 90% et plus, Stockage: 64GO"
+},
+
+{
+id:62,
+name:"Iphone 12 Simple",
+price:"150 000 FCFA",
+image:iphone12simple,
+category:"phone",
+description:"Eta battérie: 90% et plus, Stockage: 128GO"
+},
+
+{
+id:63,
+name:"Iphone 13 Pro",
+price:"260 000 FCFA",
+image:iphone13pro,
+category:"phone",
+description:"Eta battérie: 90% et plus, Stockage: 256GO"
+},
+
+{
+id:64,
+name:"Iphone 13 Pro",
+price:"240 000 FCFA",
+image:iphone13proo,
+category:"phone",
+description:"Eta battérie: 90% et plus, Stockage: 128GO"
+},
+
+{
+id:65,
+name:"Iphone 13 Pro Max",
+price:"265 000 FCFA",
+image:iphone13max,
+category:"phone",
+description:"Eta battérie: 90% et plus, Stockage: 128GO"
+},
+
+{
+id:66,
+name:"Iphone 13 Pro Max",
+price:"285 000 FCFA",
+image:iphone13maxx,
+category:"phone",
+description:"Eta battérie: 90% et plus, Stockage: 256GO"
+},
+
+{
+id:67,
+name:"Iphone 14 Simple",
+price:"210 000 FCFA",
+image:iphone14simple,
+category:"phone",
+description:"Eta battérie: 90% et plus, Stockage: 128GO"
+},
+
+{
+id:68,
+name:"Iphone 15 Simple Esim",
+price:"290 000 FCFA",
+image:iphone15simple,
+category:"phone",
+description:"Eta battérie: 90% et plus, Stockage: 256GO"
+},
+
+{
+id:69,
+name:"Iphone 16 Pro",
+price:"500 000 FCFA",
+image:iphone16pro,
+category:"phone",
+description:"Eta battérie: 90% et plus, Stockage: 256GO"
 },
 
 {
