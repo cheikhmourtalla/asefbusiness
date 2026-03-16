@@ -7,6 +7,7 @@ import Home from "./pages/Home"
 import Products from "./pages/Products"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
+import Testimonials from "./components/Testimonials"
 
 export default function App(){
 
@@ -24,7 +25,7 @@ return(
 <Products/>
 <About/>
 <Contact/>
-
+<Testimonials/>
 <Footer/>
 
 </div>

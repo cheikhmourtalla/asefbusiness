@@ -7,7 +7,30 @@ export default function Products() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [search, setSearch] = useState("");
 
-  const filteredProducts = products.filter((product) =>
+  const getPriority = (product) => {
+    const name = product.name.toLowerCase();
+
+    if (name.includes("iphone xr")) return 1;
+    if (name.includes("iphone 11")) return 2;
+    if (name.includes("iphone 12")) return 3;
+    if (name.includes("iphone 13")) return 4;
+    if (name.includes("iphone 14")) return 5;
+    if (name.includes("iphone 15")) return 6;
+    if (name.includes("iphone 16")) return 7;
+    if (name.includes("iphone 17")) return 8;
+
+    if (name.includes("ipad") || name.includes("tablette")) return 9;
+
+    if (product.category === "phone") return 10;
+
+    return 11;
+  };
+
+  const sortedProducts = [...products].sort((a, b) => {
+    return getPriority(a) - getPriority(b);
+  });
+
+  const filteredProducts = sortedProducts.filter((product) =>
     product.name.toLowerCase().includes(search.toLowerCase())
   );
 
@@ -20,7 +43,10 @@ export default function Products() {
   );
 
   return (
-    <section id="products" className="pt-24 max-w-7xl mx-auto px-6 pb-16">
+    <section
+      id="products"
+      className="pt-24 w-full max-w-[1400px] mx-auto px-4 sm:px-6 pb-16"
+    >
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -30,7 +56,6 @@ export default function Products() {
         Nos Produits
       </motion.h2>
 
-      {/* Barre de recherche */}
       <div className="max-w-2xl mx-auto mb-12">
         <input
           type="text"
@@ -41,7 +66,6 @@ export default function Products() {
         />
       </div>
 
-      {/* Téléphones */}
       {phones.length > 0 && (
         <div className="mb-16">
           <h3 className="text-2xl font-semibold mb-6 text-primary text-center md:text-left">
@@ -60,7 +84,6 @@ export default function Products() {
         </div>
       )}
 
-      {/* Accessoires */}
       {accessories.length > 0 && (
         <div>
           <h3 className="text-2xl font-semibold mb-6 text-primary text-center md:text-left">
@@ -79,14 +102,12 @@ export default function Products() {
         </div>
       )}
 
-      {/* Aucun résultat */}
       {phones.length === 0 && accessories.length === 0 && (
         <p className="text-center text-gray-600 dark:text-gray-300 text-lg">
           Aucun produit trouvé.
         </p>
       )}
 
-      {/* Modal détail */}
       <AnimatePresence>
         {selectedProduct && (
           <motion.div
@@ -107,7 +128,7 @@ export default function Products() {
               <img
                 src={selectedProduct.image}
                 alt={selectedProduct.name}
-                className="w-full h-64 object-cover"
+                className="w-full h-64 object-contain bg-white"
               />
 
               <div className="p-6">

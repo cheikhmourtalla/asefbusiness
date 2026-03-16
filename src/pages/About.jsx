@@ -17,7 +17,7 @@ transition={{duration:0.5}}
 className="text-3xl font-bold text-center mb-12"
 >
 
-À propos de ASEF BUSINESS
+À PROPOS DE ASEF BUSINESS
 
 </motion.h2>
 

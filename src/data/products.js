@@ -126,7 +126,7 @@ description:"Casque Bluetooth sans fil avec un son clair, une bonne autonomie et
 
 {
 id:7,
-name:"Coque iPhone",
+name:"Coque",
 price:"5 000 FCFA",
 image:coque,
 category:"accessory",
@@ -458,7 +458,7 @@ category:"accessory",
 },
 
 {
-id:44,
+id:45,
 name:"Watch Serie 6: 44mm Saphir",
 price:"140 000 FCFA",
 image:watchs6,
@@ -466,7 +466,7 @@ category:"accessory",
 },
 
 {
-id:44,
+id:46,
 name:"Watch Serie 7: 41mm",
 price:"115 000 FCFA",
 image:watchs7,
@@ -474,7 +474,7 @@ category:"accessory",
 },
 
 {
-id:44,
+id:47,
 name:"Watch Serie 8: 45mm",
 price:"170 000 FCFA",
 image:watchs8,
@@ -482,7 +482,7 @@ category:"accessory",
 },
 
 {
-id:44,
+id:48,
 name:"Watch Serie 9: 45mm",
 price:"200 000 FCFA",
 image:watchs9,
@@ -490,7 +490,7 @@ category:"accessory",
 },
 
 {
-id:45,
+id:49,
 name:"Ipad Air 1",
 price:"45 000 FCFA",
 image:air1,
@@ -499,7 +499,7 @@ description:"Stockage: 32GO"
 },
 
 {
-id:46,
+id:50,
 name:"Ipad Air 2",
 price:"65 000 FCFA",
 image:air2,
@@ -508,7 +508,7 @@ description:"Stockage: 64GO"
 },
 
 {
-id:47,
+id:51,
 name:"Ipad 6th",
 price:"85 000 FCFA",
 image:ipad6th,
@@ -517,7 +517,7 @@ description:"Stockage: 128GO"
 },
 
 {
-id:48,
+id:52,
 name:"Ipad 7th",
 price:"96 000 FCFA",
 image:ipad7th,
@@ -526,7 +526,7 @@ description:"Stockage: 32GO"
 },
 
 {
-id:49,
+id:53,
 name:"Ipad Pro 9.7",
 price:"125 000 FCFA",
 image:ipadpro9,
@@ -535,7 +535,7 @@ description:"Stockage: 32GO"
 },
 
 {
-id:50,
+id:54,
 name:"Ipad Pro 10.5",
 price:"150 000 FCFA",
 image:ipadpro10,
@@ -544,7 +544,7 @@ description:"Stockage: 64GO"
 },
 
 {
-id:51,
+id:55,
 name:"Ipad 11th A16 SCELLE",
 price:"275 000 FCFA",
 image:ipad11th,
@@ -553,7 +553,7 @@ description:"Stockage: 128GO"
 },
 
 {
-id:52,
+id:56,
 name:"Ipad Pro 11 Inch 4th Gen",
 price:"430 000 FCFA",
 image:ipadpro11inch,
@@ -562,7 +562,7 @@ description:"Stockage: 128GO"
 },
 
 {
-id:53,
+id:57,
 name:"Ipad Air M3 11 Inch",
 price:"460 000 FCFA",
 image:ipadairm3,
@@ -571,7 +571,7 @@ description:"Stockage: 128GO"
 },
 
 {
-id:54,
+id:58,
 name:"Ipad Pro M4 13inch ",
 price:"570 000 FCFA",
 image:ipadprom4,
